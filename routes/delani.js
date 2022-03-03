@@ -15,17 +15,11 @@ router.post('/', function(req, res, next) {
             console.log(err);
         }
         res.send(`Thank You ${delani_data.name} for trusting Delani Studio`);
+        res.send("Go to /users to view our collection of users");
     })
   });
 
-router.get('/', function(req, res, next) {
 
-    Delani.find({}, (err, data) => {
-        if (err) {
-            res.send(`${err}`);
-        }
-        res.send(`${data}`)
-    })
     //res.sendFile(__dirname + "/index.html");
     // fs.readFile('index.html', function(err,data){
     //     if(err){
@@ -33,6 +27,5 @@ router.get('/', function(req, res, next) {
     //     }
     //     res.writeHead(200, {'Content-Type': 'text/html'});
     //     res.write(data);
-});
 
 module.exports = router;
