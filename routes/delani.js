@@ -14,7 +14,7 @@ router.post('/', function(req, res, next) {
         if(err){
             console.log(err);
         }
-        res.send(`Thank You ${delani_data.name}`);
+        res.send(`Thank You ${delani_data.name} for trusting Delani Studio`);
     })
   });
 
@@ -24,10 +24,6 @@ router.get('/', function(req, res, next) {
         if (err) {
             res.send(`${err}`);
         }
-
-        data.forEach((entry) => {
-            console.log(entry)
-        })
         res.send(`${data}`)
     })
     //res.sendFile(__dirname + "/index.html");
