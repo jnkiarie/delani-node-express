@@ -9,7 +9,7 @@ body{
 
 .delani1{
     color: white;
-    background-image: url(../assets/backgrounds/h_img.jpg);
+    background-image: url(/images/backgrounds/h_img.jpg);
     background-size:100% 100%;
     background-repeat: no-repeat;
     text-align: center;
@@ -21,7 +21,7 @@ body{
     }
 #delani3{
     color: white;
-    background-image: url(../assets/backgrounds/s_image.jpg);
+    background-image: url(/images/backgrounds/s_image.jpg);
     background-size:100% 100%;
     background-repeat: no-repeat;
     text-align: center;
@@ -31,7 +31,7 @@ body{
 }
 #delani5{
     color: white;
-    background-image: url(../assets/backgrounds/c_image.jpg);
+    background-image: url(/images/backgrounds/c_image.jpg);
     background-size:100% 100%;
     background-repeat: no-repeat;
     text-align: center;
