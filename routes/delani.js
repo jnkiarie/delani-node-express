@@ -14,7 +14,7 @@ router.post('/', function(req, res, next) {
         if(err){
             console.log(err);
         }
-        res.send(`Details Captured As: ${delani_data}`);
+        res.send(`Thank You ${delani_data.name}`);
     })
   });
 
