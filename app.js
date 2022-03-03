@@ -31,22 +31,22 @@ app.use(function(req, res, next) {
   next(createError(404));
 });
 
-//Database Connection
-const dbConnectionString = 'mongodb://localhost/';
-const dbName = 'delani';
-const MONGODB_URI = process.env.MONGODB_URI || dbConnectionString + dbName;
-mongoose.connect(MONGODB_URI);
-const db = mongoose.connection;
+// //Database Connection
+// const dbConnectionString = 'mongodb://localhost/';
+// const dbName = 'delani';
+// const MONGODB_URI = process.env.MONGODB_URI || dbConnectionString + dbName;
+// mongoose.connect(MONGODB_URI);
+// const db = mongoose.connection;
 
-//Check Connection
-db.once('open', () =>{
-  console.log('Database Connected Successfully');
-});
+// //Check Connection
+// db.once('open', () =>{
+//   console.log('Database Connected Successfully');
+// });
 
-//Check for DB errors
-db.on('error',(error)=>{
-  console.log(error);
-});
+// //Check for DB errors
+// db.on('error',(error)=>{
+//   console.log(error);
+// });
 
 
 
