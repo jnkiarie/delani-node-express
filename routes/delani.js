@@ -4,7 +4,7 @@ var router = express.Router();
 var bodyParser = require('body-parser');
 router.use(bodyParser.json());
 router.use(bodyParser.urlencoded({ extended: true }));
-var fs = require("fs");
+
 
 /* GET users listing. */
 router.post('/', function(req, res, next) {
@@ -18,6 +18,7 @@ router.post('/', function(req, res, next) {
         res.send("Go to /users to view our collection of users");
     })
   });
+
 
 
     //res.sendFile(__dirname + "/index.html");
