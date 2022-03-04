@@ -18,5 +18,6 @@ router.post('/', function(req, res, next) {
         //res.send("Go to /users to view our collection of users");
     })
   });
-  
+
 module.exports = router;
+
