@@ -1,11 +1,17 @@
-pipeline {
-    agent {
-        label 'jenkins-local'
+pipeline{
+    agent any
+    tools{
+        nodejs 'Node 12'
+    }
+    stages{
+        stage('Clone Repository'){
+            steps{ 
+                git 'https://github.com/jnkiarie/delani-node-express.git'
+            }
         }
-    stages {
-        stage('build') {
-            steps {
-                sh 'node --version'
+        stage('Install Dependencies / Build'){
+            steps{
+                sh 'npm install'
             }
         }
     }
